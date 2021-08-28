@@ -1,0 +1,144 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+
+.navbar {
+    background: $clr-white;
+    box-shadow: $light-shadow;
+
+    .nav-center {
+
+
+        .nav-header {
+            @include flex-center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        .nav-toggle {
+            font-size: 1.5rem;
+            color: $clr-primary-4;
+            background: transparent;
+            border-color: transparent;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+
+        .logo {
+            height: 30px;
+        }
+
+        .links-container {
+            height: 0;
+            overflow: hidden;
+
+            &.show {
+                height: auto;
+            }
+        }
+
+        .links li {
+            color: $clr-grey-2;
+            font-size: 1rem;
+            text-transform: capitalize;
+            letter-spacing: $spacing;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: $transition;
+            position: relative;
+
+            &:hover {
+                background: $clr-primary-8;
+                color: $clr-primary-4;
+                padding-left: 1.5rem;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                @include pseudo;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 3px;
+                background: $clr-primary-4;
+                transition: .3s ease all;
+            }
+        }
+
+        .social-icons {
+            @include flex-space-ar;
+            list-style-type: none;
+            height: 0;
+            overflow: hidden;
+
+            li {
+                margin: .5rem 1rem;
+            }
+
+            &.show {
+                height: auto;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .navbar {
+        .nav-center {
+            max-width: 1200px;
+            @include center-auto;
+            @include flex-space-bet;
+            padding: 1rem;
+
+            .logo {
+                display: 40px;
+            }
+
+            .nav-headder {
+                padding: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+
+            .links-container {
+                height: auto;
+            }
+
+            .links {
+                display: flex;
+
+                li {
+                    padding: 0;
+                    margin: 0 0.5rem;
+                    &:hover {
+                        padding: 0;
+                        background: transparent;
+                    }
+                }
+            }
+
+            .social-icons {
+                display: flex;
+
+                a {
+                    margin: 0 0.5rem;
+                    color: $clr-primary-4;
+                    transition: $transition;
+                    &:hover {
+                        color: $clr-primary-7;
+                    }
+                }
+            }
+        }
+    }
+}
