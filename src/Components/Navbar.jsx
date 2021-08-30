@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className={`links-container`}>
                     <ul className="links">
                         {links.filter((link) => link.text !== "Error").map((link) => {
-                            const {id, url, text} = link;
+                            const { id, url, text } = link;
 
                             return (
                                 <li key={id}>

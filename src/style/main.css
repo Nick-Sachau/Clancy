@@ -254,9 +254,6 @@ body {
   background: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.navbar .nav-center .active {
-  color: orange;
-}
 .navbar .nav-center .nav-header {
   display: flex;
   align-items: center;
@@ -281,6 +278,9 @@ body {
 .navbar .nav-center .links-container {
   height: 0;
   overflow: hidden;
+}
+.navbar .nav-center .links-container .active {
+  text-decoration: underline;
 }
 .navbar .nav-center .links-container.show {
   height: auto;

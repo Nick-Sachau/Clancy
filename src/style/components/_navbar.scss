@@ -8,10 +8,6 @@
     box-shadow: $light-shadow;
 
     .nav-center {
-
-        .active {
-            color: orange;
-        }
         
 
         .nav-header {
@@ -40,6 +36,10 @@
         .links-container {
             height: 0;
             overflow: hidden;
+
+            .active {
+                text-decoration: underline;
+            }
 
             &.show {
                 height: auto;
