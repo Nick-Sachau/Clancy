@@ -15,3 +15,11 @@
 ![About Page](./src/wireframe/aboutD.png)
 ### Services Page (Desktop)
 ![Services Page](./src/wireframe/servicesD.png)
+
+## 8/30
+# Jaden: Setup pages and basic layout
+# Liam: Helped finish wireframe
+# Nick: I made the switches and links work for the nav bar and footer work
+
+### Website (Mobile)
+![Mobile Page](./src/wireframe/website.png)
