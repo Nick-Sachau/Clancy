@@ -251,8 +251,11 @@ body {
 }
 
 .navbar {
-  background: #fff;
+  background: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-center .active {
+  color: orange;
 }
 .navbar .nav-center .nav-header {
   display: flex;
@@ -283,7 +286,7 @@ body {
   height: auto;
 }
 .navbar .nav-center .links li {
-  color: #4b5e71;
+  color: grey;
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
@@ -373,6 +376,10 @@ body {
     color: gray;
   }
 }
+footer {
+  background: white;
+}
+
 html {
   overflow: hidden;
 }
@@ -391,7 +398,7 @@ main .container {
   display: grid;
   margin: 5rem auto;
   grid-gap: 1rem 2rem;
-  background: #fff;
+  background: white;
   padding: 2.5rem 2rem;
   border-radius: 0.25rem;
 }
@@ -418,7 +425,7 @@ main .container .questions article header .btn {
   width: 2rem;
   height: 2rem;
   padding: 0.5rem;
-  background-color: rgba(0, 120, 218, 0.596);
+  background-color: #1fa8e7;
   border-color: transparent;
   font-size: 1.5rem;
   border-radius: 50%;
