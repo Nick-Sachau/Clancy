@@ -22,6 +22,10 @@ const Footer = () => {
           <Route path="/about">
             <About />
           </Route>
+
+          <Route path="/services">
+            <Services />
+          </Route>
         </Switch>
       </div>
     </>
