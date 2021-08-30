@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -22,15 +21,6 @@ function App() {
         </Route>
       </Navbar>
     </>
-=======
-import './style/main.css'
-
-function App() {
-  return (
-    <h1>
-      Clancy's website
-    </h1>
->>>>>>> 796e49e728ab8bf68ec4c199f1bcefaa89a43fc6
   );
 }
 
