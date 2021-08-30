@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import './style/main.css';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -8,7 +9,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-<<<<<<< HEAD
-
-=======
->>>>>>> 796e49e728ab8bf68ec4c199f1bcefaa89a43fc6
