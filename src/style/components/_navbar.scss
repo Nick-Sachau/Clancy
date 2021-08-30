@@ -9,6 +9,10 @@
 
     .nav-center {
 
+        .active {
+            color: orange;
+        }
+        
 
         .nav-header {
             @include flex-center;
