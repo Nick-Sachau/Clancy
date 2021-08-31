@@ -1,5 +1,5 @@
 ## 8/27
-# Jaden: 
+# Jadyn: 
 # Liam: 
 # Nick: 
 ### Home Page (Mobile)
@@ -17,7 +17,7 @@
 ![Services Page](./src/wireframe/servicesD.png)
 
 ## 8/30
-# Jaden: Setup pages and basic layout
+# Jadyn: Setup pages and basic layout
 # Liam: Helped finish wireframe
 # Nick: I made the switches and links work for the nav bar and footer work
 
