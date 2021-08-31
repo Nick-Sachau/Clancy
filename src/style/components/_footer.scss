@@ -1,3 +1,41 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+
 footer {
-    background: white;
+    background: $clr-primary-3;
+    color: $text-color;
+    
+    .contactContainer {
+        color: $text-color;
+
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        button {
+            color: $button-text-color;
+            background: $button-color;
+            border-radius: $radius;
+            width: 3rem;
+            height: 1.5rem;
+        }
+    }
+
+    .footerContainer {
+        
+
+        li {
+            list-style-type: none;
+
+            a {
+
+                &:visited {
+                    color: $text-color;
+                }
+            }
+        }
+    }
 }
