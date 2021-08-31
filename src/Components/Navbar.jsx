@@ -5,16 +5,22 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
 
+    const [navActive, setNavActive] = useState(false)
+
+    const openNav = () => {
+        setNavActive(!navActive)
+    }
+
     return (
         <nav className="navbar">
             <div className="nav-center">
-                <div className="nav-header">
+                <div className={`nav-header ${navActive ? 'active' : ''}`}>
                     <img src="" alt="logo(do later)" className="logo" />
-                    <button className="nav-toggle" >
+                    <button onClick={openNav} className="nav-toggle" >
                         <GiHamburgerMenu />
                     </button>
                 </div>
-                <div className={`links-container`}>
+                <div className={`links-container ${navActive ? "show" : ''}`}>
                     <ul className="links">
                         {links.filter((link) => link.text !== "Error").map((link) => {
                             const { id, url, text } = link;

@@ -251,7 +251,7 @@ body {
 }
 
 .navbar {
-  background: white;
+  background: #404040;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .navbar .nav-center .nav-header {
@@ -261,9 +261,12 @@ body {
   justify-content: space-between;
   padding: 1rem;
 }
+.navbar .nav-center .nav-header.active {
+  border-bottom: 3px solid #ca1c1c;
+}
 .navbar .nav-center .nav-toggle {
   font-size: 1.5rem;
-  color: #404040;
+  color: #ca1c1c;
   background: transparent;
   border-color: transparent;
   transition: all 0.5s linear;
@@ -276,17 +279,23 @@ body {
   height: 30px;
 }
 .navbar .nav-center .links-container {
+  position: absolute;
+  z-index: 100;
   height: 0;
   overflow: hidden;
+  background: #404040;
+  width: 100%;
+  text-align: center;
 }
 .navbar .nav-center .links-container .active {
   text-decoration: underline;
 }
 .navbar .nav-center .links-container.show {
   height: auto;
+  padding-bottom: 1rem;
 }
 .navbar .nav-center .links li {
-  color: grey;
+  color: #e6e6e6;
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
@@ -315,6 +324,9 @@ body {
   height: 3px;
   background: #404040;
   transition: 0.3s ease all;
+}
+.navbar .nav-center .links li a:visited {
+  color: #e6e6e6;
 }
 .navbar .nav-center .social-icons {
   display: flex;
@@ -377,7 +389,28 @@ body {
   }
 }
 footer {
-  background: white;
+  background: #333333;
+  color: #e6e6e6;
+}
+footer .contactContainer {
+  color: #e6e6e6;
+}
+footer .contactContainer h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+footer .contactContainer button {
+  color: #333333;
+  background: #6abf40;
+  border-radius: 0.25rem;
+  width: 3rem;
+  height: 1.5rem;
+}
+footer .footerContainer li {
+  list-style-type: none;
+}
+footer .footerContainer li a:visited {
+  color: #e6e6e6;
 }
 
 html {
