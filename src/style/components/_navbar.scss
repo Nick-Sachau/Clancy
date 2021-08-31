@@ -28,7 +28,7 @@
             transition: $transition;
             cursor: pointer;
 
-            &:hover {
+            &.rotate {
                 transform: rotate(90deg);
             }
         }

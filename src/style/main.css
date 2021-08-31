@@ -272,7 +272,7 @@ body {
   transition: all 0.5s linear;
   cursor: pointer;
 }
-.navbar .nav-center .nav-toggle:hover {
+.navbar .nav-center .nav-toggle.rotate {
   transform: rotate(90deg);
 }
 .navbar .nav-center .logo {
