@@ -6,9 +6,12 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 const Navbar = () => {
 
     const [navActive, setNavActive] = useState(false)
+    const [rotateHamburger, setRotateHamburger] = useState(false)
 
     const openNav = () => {
         setNavActive(!navActive)
+        setRotateHamburger(!rotateHamburger)
+        console.log(rotateHamburger)
     }
 
     return (
@@ -16,7 +19,7 @@ const Navbar = () => {
             <div className="nav-center">
                 <div className={`nav-header ${navActive ? 'active' : ''}`}>
                     <img src="" alt="logo(do later)" className="logo" />
-                    <button onClick={openNav} className="nav-toggle" >
+                    <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
                         <GiHamburgerMenu />
                     </button>
                 </div>
