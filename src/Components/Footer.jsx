@@ -25,8 +25,9 @@ const Footer = () => {
         <button>Call!</button>
       </div>
       <div className="addressContainer">
-        <h4>Address</h4>
-        <h5>24710 W. Dove Trail, Buckeye, AZ 85326</h5>
+        <h3>Address</h3>
+        <h4>24710 W. Dove Trail, Buckeye, AZ 85326</h4>
+            <button>Call!</button>
       </div>
     </footer>
   );
