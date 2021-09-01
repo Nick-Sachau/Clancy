@@ -21,5 +21,14 @@
 # Liam: Helped finish wireframe
 # Nick: I made the switches and links work for the nav bar and footer work
 
+
+# COLOR WHEEL (Monochromatic):
+# #702413
+# #F28972
+# #F04D29
+# #704035
+# #BD3D20 
+
+
 ### Website (Mobile)
 ![Mobile Page](./src/wireframe/website.png)
