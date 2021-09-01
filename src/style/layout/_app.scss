@@ -2,10 +2,6 @@
 @use '../util/variables' as *;
 @use '../util/mixins' as *;
 
-html {
-    overflow: hidden
-}
-
 main {
     @include flex-center;
     background-color: $clr-primary-2;
