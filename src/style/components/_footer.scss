@@ -3,6 +3,10 @@
 @use '../util/mixins' as *;
 
 
+a:visited {
+    color: inherit;
+}
+
 footer {
     background: $clr-primary-3;
     color: $text-color;
