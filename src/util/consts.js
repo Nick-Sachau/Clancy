@@ -16,8 +16,8 @@ export const links = [
     },
     {
         id: 3,
-        url: '/products',
-        text: 'Products',
+        url: '/services',
+        text: 'Services',
         page:<Services/>
     },
     {
