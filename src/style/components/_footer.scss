@@ -3,12 +3,28 @@
 @use '../util/mixins' as *;
 
 
+a:visited {
+    color: inherit;
+}
+
 footer {
     background: $clr-primary-3;
     color: $text-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
     
+
     .contactContainer {
+        margin: 0px 10rem;
         color: $text-color;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
 
         h3 {
             font-size: 2rem;
@@ -25,7 +41,11 @@ footer {
     }
 
     .footerContainer {
-        
+        margin: 0px 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
 
         li {
             list-style-type: none;
@@ -37,5 +57,13 @@ footer {
                 }
             }
         }
+    }
+
+    .addressContainer {
+        margin: 0px 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }

@@ -122,7 +122,7 @@
                 display: 40px;
             }
 
-            .nav-headder {
+            .nav-header {
                 padding: 0;
             }
 
@@ -161,4 +161,8 @@
             }
         }
     }
+}
+
+a:visited {
+    color: inherit;
 }

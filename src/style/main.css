@@ -315,7 +315,7 @@ body {
 .navbar .nav-center .links li::after {
   content: "";
   display: block;
-  positoin: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -356,7 +356,7 @@ body {
   .navbar .nav-center .logo {
     display: 40px;
   }
-  .navbar .nav-center .nav-headder {
+  .navbar .nav-center .nav-header {
     padding: 0;
   }
   .navbar .nav-center .nav-toggle {
@@ -388,12 +388,30 @@ body {
     color: gray;
   }
 }
+a:visited {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
 footer {
   background: #333333;
   color: #e6e6e6;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 footer .contactContainer {
+  margin: 0px 10rem;
   color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 footer .contactContainer h3 {
   font-size: 2rem;
@@ -406,11 +424,25 @@ footer .contactContainer button {
   width: 3rem;
   height: 1.5rem;
 }
+footer .footerContainer {
+  margin: 0px 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
 footer .footerContainer li {
   list-style-type: none;
 }
 footer .footerContainer li a:visited {
   color: #e6e6e6;
+}
+footer .addressContainer {
+  margin: 0px 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 main {
