@@ -27,3 +27,18 @@ export const links = [
         page: <Error/>
     }
 ]
+
+export const slides = [
+    {
+        src: "../images/slide1.jpeg",
+        name: "slide1",
+    },
+    {
+        src: "../images/slide2.jpeg",
+        name: "slide2",
+    },
+    {
+        src: "../images/slide3.jpeg",
+        name: "slide3",
+    },
+]

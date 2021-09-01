@@ -1,0 +1,24 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.slide {
+
+    .slideImages {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    
+
+    .lastSlide {
+        transform: translateX(-100%);
+    }
+    .activeSlide {
+        transform: translateX(0%);
+    }
+    .nextSlide {
+        transform: translateX(100%);
+    }
+}

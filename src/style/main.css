@@ -315,7 +315,7 @@ body {
 .navbar .nav-center .links li::after {
   content: "";
   display: block;
-  positoin: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -437,10 +437,6 @@ footer .addressContainer {
   flex-direction: column;
 }
 
-html {
-  overflow: hidden;
-}
-
 main {
   display: flex;
   align-items: center;
@@ -495,4 +491,18 @@ main .container .questions article header .btn {
   .container {
     grid-template-columns: 250px 1fr;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.slide .slideImages {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.slide .lastSlide {
+  transform: translateX(-100%);
+}
+.slide .activeSlide {
+  transform: translateX(0%);
+}
+.slide .nextSlide {
+  transform: translateX(100%);
+}

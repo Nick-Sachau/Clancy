@@ -14,6 +14,11 @@ const Navbar = () => {
         console.log(rotateHamburger)
     }
 
+    const closeNav = () => {
+        setNavActive(false)
+        setRotateHamburger(!rotateHamburger)
+    }
+
     return (
         <nav className="navbar">
             <div className="nav-center">
@@ -30,7 +35,7 @@ const Navbar = () => {
 
                             return (
                                 <li key={id}>
-                                    <Link to={url}>
+                                    <Link onClick={closeNav} to={url}>
                                         {text}
                                     </Link>
                                 </li>
