@@ -284,7 +284,6 @@ body {
   height: 0;
   overflow: hidden;
   background: #414141;
-  width: 100%;
   text-align: center;
 }
 .navbar .nav-center .links-container .active {
@@ -315,7 +314,7 @@ body {
 .navbar .nav-center .links li::after {
   content: "";
   display: block;
-  position: absolute;
+  positoin: absolute;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -388,6 +387,14 @@ body {
     color: gray;
   }
 }
+a:visited {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
 footer {
   background: #333333;
   color: #e6e6e6;
@@ -505,4 +512,4 @@ main .container .questions article header .btn {
 }
 .slide .nextSlide {
   transform: translateX(100%);
-}
+}/*# sourceMappingURL=main.css.map */
