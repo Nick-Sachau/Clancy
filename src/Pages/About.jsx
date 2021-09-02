@@ -3,7 +3,6 @@ import React from "react";
 const About = () => {
   return (
     <div>
-<<<<<<< HEAD
       <h1>About Me</h1>
       <div className="certs">
         <h3>Certifications</h3>
@@ -46,11 +45,6 @@ const About = () => {
       <div className="img-center">
         <img className="about-img" src="" alt="circle" />
         <h4>
-=======
-      <h1>About</h1>
-      <img src="..\util\Logo1.png" alt="image here" />
-      <h4>
->>>>>>> 1b141c74ae75bf900ac3fdfae807ff510384eb4e
         Sunt proident pariatur anim eiusmod ipsum laboris duis ut. Ullamco
         consectetur velit ut incididunt. Proident adipisicing est sit ex duis
         magna. Id labore incididunt magna cupidatat nisi dolore non qui occaecat
@@ -61,33 +55,7 @@ const About = () => {
         deserunt proident incididunt adipisicing ipsum eu. Nisi enim incididunt
         in dolor. Eiusmod et enim est ut et occaecat esse amet id tempor.
       </h4>
-<<<<<<< HEAD
       </div>
-=======
-
-      <h3>Certifications</h3>
-      <h4>lorem</h4>
-      <h4>lorem</h4>
-      <h4>lorem</h4>
-      <h4>lorem</h4>
-
-      <h3>Why do I need an RV inspection?</h3>
-      <h4>
-        Esse velit nisi do Lorem qui minim reprehenderit reprehenderit. Amet
-        amet ipsum et mollit consectetur nostrud irure. Aliqua esse sunt
-        excepteur consequat tempor nostrud sunt sit culpa ex proident fugiat
-        exercitation. Cillum duis velit fugiat ipsum irure laboris ex voluptate
-        amet reprehenderit. Tempor aliqua nostrud irure non nostrud ad ipsum
-        sunt.
-      </h4>
-      <h3>What to expect</h3>
-      <h4>
-        Esse aute fugiat nostrud commodo cupidatat. Ullamco culpa aute dolor
-        quis ex occaecat laborum veniam ut reprehenderit nisi labore
-        exercitation. Labore quis aliquip irure adipisicing amet excepteur non
-        aliqua. Eu ut consequat do non amet.
-      </h4>
->>>>>>> 1b141c74ae75bf900ac3fdfae807ff510384eb4e
     </div>
   );
 };
