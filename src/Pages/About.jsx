@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <h1>About Me</h1>
-      <img src="" alt="image here" />
+      <h1>About</h1>
+      <img src="..\util\Logo1.png" alt="image here" />
       <h4>
         Sunt proident pariatur anim eiusmod ipsum laboris duis ut. Ullamco
         consectetur velit ut incididunt. Proident adipisicing est sit ex duis
@@ -16,7 +16,7 @@ const About = () => {
         deserunt proident incididunt adipisicing ipsum eu. Nisi enim incididunt
         in dolor. Eiusmod et enim est ut et occaecat esse amet id tempor.
       </h4>
-      
+
       <h3>Certifications</h3>
       <h4>lorem</h4>
       <h4>lorem</h4>
