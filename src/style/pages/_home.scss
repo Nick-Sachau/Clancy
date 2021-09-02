@@ -3,22 +3,30 @@
 @use '../util/mixins' as *;
 
 .slide {
-
     .slideImages {
         display: flex;
         flex-direction: row;
         position: relative;
-    }
+        transition: 1s;
+        height: 30vh;
 
-    
-
-    .lastSlide {
-        transform: translateX(-100%);
-    }
-    .activeSlide {
-        transform: translateX(0%);
-    }
-    .nextSlide {
-        transform: translateX(100%);
+        img {
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            top: 0;
+            @include box(100%);
+            transition: 2s all ease-out;
+            &.lastSlide {
+                transform: translateX(-100%);
+            }
+            &.activeSlide {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+            &.nextSlide {
+                transform: translateX(100%);
+            }
+        }
     }
 }
