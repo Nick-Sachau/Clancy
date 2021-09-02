@@ -268,7 +268,6 @@ a:visited {
   justify-content: center;
   justify-content: space-between;
   padding: 1rem;
-  z-index: 23021938102983098000000000;
 }
 .navbar .nav-center .nav-header.active {
   border-bottom: 3px solid #ca1c1c;
@@ -286,8 +285,10 @@ a:visited {
 }
 .navbar .nav-center .logo {
   height: 30px;
+  width: 50px;
+  z-index: 23021938102983098000000000;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 .navbar .nav-center .links-container {
   width: 100%;

@@ -23,7 +23,6 @@ a:visited {
             @include flex-center;
             justify-content: space-between;
             padding: 1rem;
-            z-index: 23021938102983098098098098;
 
             &.active {
                 border-bottom: 3px solid $clr-secondary-3;
@@ -45,8 +44,10 @@ a:visited {
 
         .logo {
             height: 30px;
+            width: 50px;
+            z-index: 23021938102983098098098098;
             display: flex;
-            justify-content: left;
+            justify-content: center;
         }
 
         .links-container {
