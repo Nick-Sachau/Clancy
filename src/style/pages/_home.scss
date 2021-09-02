@@ -3,12 +3,15 @@
 @use '../util/mixins' as *;
 
 .slide {
+
     .slideImages {
         display: flex;
         flex-direction: row;
         position: relative;
         transition: 1s;
         height: 30vh;
+        top: -10vh;
+        z-index: -10;
 
         img {
             position: absolute;
@@ -40,7 +43,10 @@
         overflow: hidden;
 
         .slideImages {
-            height: 50vh;
+            height: 55vh;
+            width: 45vw;
+            z-index: -10;
+            top: 7vh;
 
             img {
                 top: -15vh;

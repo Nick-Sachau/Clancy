@@ -262,17 +262,18 @@ a:visited {
   background: #414141;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.navbar .nav-center .nav-header {
+.navbar .nav-header {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.25rem 1rem;
+  z-index: 23021938102983098000000000;
 }
-.navbar .nav-center .nav-header.active {
+.navbar .nav-header.active {
   border-bottom: 3px solid #ca1c1c;
 }
-.navbar .nav-center .nav-toggle {
+.navbar .nav-toggle {
   font-size: 1.5rem;
   color: #ca1c1c;
   background: transparent;
@@ -280,13 +281,15 @@ a:visited {
   transition: all 0.5s linear;
   cursor: pointer;
 }
-.navbar .nav-center .nav-toggle.rotate {
+.navbar .nav-toggle.rotate {
   transform: rotate(90deg);
 }
-.navbar .nav-center .logo {
-  height: 30px;
+.navbar .logo {
+  height: 70px;
+  display: flex;
+  justify-content: left;
 }
-.navbar .nav-center .links-container {
+.navbar .links-container {
   width: 100%;
   position: absolute;
   z-index: 100;
@@ -295,14 +298,14 @@ a:visited {
   background: #414141;
   text-align: center;
 }
-.navbar .nav-center .links-container .active {
+.navbar .links-container .active {
   text-decoration: underline;
 }
-.navbar .nav-center .links-container.show {
+.navbar .links-container.show {
   height: auto;
   padding-bottom: 1rem;
 }
-.navbar .nav-center .links li {
+.navbar .links li {
   color: #e6e6e6;
   font-size: 1rem;
   text-transform: capitalize;
@@ -312,15 +315,15 @@ a:visited {
   transition: all 0.5s linear;
   position: relative;
 }
-.navbar .nav-center .links li:hover {
+.navbar .links li:hover {
   background: #8c8c8c;
   color: #414141;
   padding-left: 1.5rem;
 }
-.navbar .nav-center .links li:hover::after {
+.navbar .links li:hover::after {
   width: 100%;
 }
-.navbar .nav-center .links li::after {
+.navbar .links li::after {
   content: "";
   display: block;
   positoin: absolute;
@@ -333,10 +336,10 @@ a:visited {
   background: #404040;
   transition: 0.3s ease all;
 }
-.navbar .nav-center .links li a:visited {
+.navbar .links li a:visited {
   color: #e6e6e6;
 }
-.navbar .nav-center .social-icons {
+.navbar .social-icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -344,16 +347,17 @@ a:visited {
   height: 0;
   overflow: hidden;
 }
-.navbar .nav-center .social-icons li {
+.navbar .social-icons li {
   margin: 0.5rem 1rem;
 }
-.navbar .nav-center .social-icons.show {
+.navbar .social-icons.show {
   height: auto;
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar .nav-center {
-    max-width: 1200px;
+  .navbar {
+    max-width: 100vw;
+    height: 12vh;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -361,40 +365,45 @@ a:visited {
     justify-content: space-between;
     padding: 1rem;
   }
-  .navbar .nav-center .logo {
-    display: 40px;
-  }
-  .navbar .nav-center .nav-header {
+  .navbar .nav-header {
     padding: 0;
+    width: 20%;
+    display: block;
   }
-  .navbar .nav-center .nav-toggle {
+  .navbar .nav-header .logo {
+    display: 40px;
+    width: 100px;
+    height: 100%;
+  }
+  .navbar .nav-header .nav-toggle {
     display: none;
   }
-  .navbar .nav-center .links-container {
+  .navbar .links-container {
     width: 20vw;
-    height: 50px;
+    height: auto;
+    position: relative;
   }
-  .navbar .nav-center .links {
+  .navbar .links-container .links {
     display: flex;
   }
-  .navbar .nav-center .links li {
+  .navbar .links-container .links li {
     padding: 0;
     margin: 0 0.5rem;
   }
-  .navbar .nav-center .links li:hover {
+  .navbar .links-container .links li:hover {
     padding: 0;
     background: transparent;
   }
-  .navbar .nav-center .social-icons {
+  .navbar .social-icons {
     display: flex;
   }
-  .navbar .nav-center .social-icons a {
+  .navbar .social-icons a {
     margin: 0 0.5rem;
-    color: #404040;
+    color: #e33535;
     transition: all 0.5s linear;
   }
-  .navbar .nav-center .social-icons a:hover {
-    color: gray;
+  .navbar .social-icons a:hover {
+    color: #ef8a8a;
   }
 }
 a:visited {
@@ -521,6 +530,8 @@ main .container .questions article header .btn {
   position: relative;
   transition: 1s;
   height: 30vh;
+  top: -10vh;
+  z-index: -10;
 }
 .slide .slideImages img {
   position: absolute;
@@ -550,7 +561,10 @@ main .container .questions article header .btn {
     overflow: hidden;
   }
   .slide .slideImages {
-    height: 50vh;
+    height: 55vh;
+    width: 45vw;
+    z-index: -10;
+    top: 7vh;
   }
   .slide .slideImages img {
     top: -15vh;

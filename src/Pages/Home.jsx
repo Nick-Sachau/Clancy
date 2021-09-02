@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { slides } from '../util/consts'
+import {GoTriangleLeft, GoTriangleRight} from 'react-icons/go'
 
 const Home = () => {
     const [slideNumber, setSlideNumber] = useState(0);
+
+    const nextPicture = () => {
+        setSlideNumber(slideNumber + 1)
+    }
+
+    const prevPicture = () => {
+        setSlideNumber(slideNumber - 1)
+    }
 
     useEffect(() => {
         const x = setInterval(() => {
@@ -25,11 +34,10 @@ const Home = () => {
 
     return (
         <div className="slide">
-            <h2>RV INSPECTION</h2>
             <div className={`slideImages`} >
                 {slides.map((slide, index) => {
                     const { src, name } = slide;
-                    let position = "nextSlide"
+                    let position = "nextSlide"  
 
                     if(index === slideNumber) {
                         position = "activeSlide";

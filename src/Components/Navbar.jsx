@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { links } from '../util/consts';
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi';
+ 
 
 const Navbar = () => {
 
@@ -21,28 +22,26 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="nav-center">
-                <div className={`nav-header ${navActive ? 'active' : ''}`}>
-                    <img src="" alt="logo(do later)" className="logo" />
-                    <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
-                        <GiHamburgerMenu />
-                    </button>
-                </div>
-                <div className={`links-container ${navActive ? "show" : ''}`}>
-                    <ul className="links">
-                        {links.filter((link) => link.text !== "Error").map((link) => {
-                            const { id, url, text } = link;
+            <div className={`nav-header ${navActive ? 'active' : ''}`}>
+                <img src="../Images/Logo1.png" alt="fuck" className="logo" />
+                <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
+                    <GiHamburgerMenu />
+                </button>
+            </div>
+            <div className={`links-container ${navActive ? "show" : ''}`}>
+                <ul className="links">
+                    {links.filter((link) => link.text !== "Error").map((link) => {
+                        const { id, url, text } = link;
 
-                            return (
-                                <li key={id}>
-                                    <Link onClick={closeNav} to={url}>
-                                        {text}
-                                    </Link>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </div>
+                        return (
+                            <li key={id}>
+                                <Link onClick={closeNav} to={url}>
+                                    {text}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
         </nav>
     )
