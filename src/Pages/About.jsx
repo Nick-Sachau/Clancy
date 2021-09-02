@@ -16,11 +16,29 @@ const About = () => {
         deserunt proident incididunt adipisicing ipsum eu. Nisi enim incididunt
         in dolor. Eiusmod et enim est ut et occaecat esse amet id tempor.
       </h4>
+      
       <h3>Certifications</h3>
       <h4>lorem</h4>
       <h4>lorem</h4>
       <h4>lorem</h4>
       <h4>lorem</h4>
+
+      <h3>Why do I need an RV inspection?</h3>
+      <h4>
+        Esse velit nisi do Lorem qui minim reprehenderit reprehenderit. Amet
+        amet ipsum et mollit consectetur nostrud irure. Aliqua esse sunt
+        excepteur consequat tempor nostrud sunt sit culpa ex proident fugiat
+        exercitation. Cillum duis velit fugiat ipsum irure laboris ex voluptate
+        amet reprehenderit. Tempor aliqua nostrud irure non nostrud ad ipsum
+        sunt.
+      </h4>
+      <h3>What to expect</h3>
+      <h4>
+        Esse aute fugiat nostrud commodo cupidatat. Ullamco culpa aute dolor
+        quis ex occaecat laborum veniam ut reprehenderit nisi labore
+        exercitation. Labore quis aliquip irure adipisicing amet excepteur non
+        aliqua. Eu ut consequat do non amet.
+      </h4>
     </div>
   );
 };
