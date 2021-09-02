@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="nav-center">
                 <div className={`nav-header ${navActive ? 'active' : ''}`}>
-                    <img src="./util/Logo1.png" alt="fuck" className="logo" />
+                <img src="./util/Logo1.png" alt="" className="logo" />
                     <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
                         <GiHamburgerMenu />
                     </button>
