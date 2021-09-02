@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <h3>Contact Me</h3>
       <div className="footerContainer">
         {links
           .filter((link) => link.text !== "Error")
