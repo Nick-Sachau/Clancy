@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div>
       <h1>Services</h1>
-      <img src="" alt="logo" />
+      <img src="../Images/logo2.png" alt="logo" width="200px"/>
       <h3>Repair and Maintenance</h3>
       <h4>
         Cupidatat sunt anim qui do veniam. Laborum ut anim et qui. Ad voluptate
@@ -40,7 +40,7 @@ const Services = () => {
         sunt.
       </h4>
       <h3>What to expect</h3>
-      <h4>
+      <h4 className="bottom">
         Esse aute fugiat nostrud commodo cupidatat. Ullamco culpa aute dolor
         quis ex occaecat laborum veniam ut reprehenderit nisi labore
         exercitation. Labore quis aliquip irure adipisicing amet excepteur non

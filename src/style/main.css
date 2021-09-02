@@ -570,3 +570,8 @@ main .container .questions article header .btn {
     top: -15vh;
   }
 }
+@media only screen and (min-width: 768px) {
+  .bottom {
+    margin-bottom: 20vh;
+  }
+}
