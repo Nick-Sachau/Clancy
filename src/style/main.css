@@ -372,7 +372,7 @@ a:visited {
   }
   .navbar .nav-center .links-container {
     width: 20vw;
-    height: 50px;
+    height: auto;
   }
   .navbar .nav-center .links {
     display: flex;
