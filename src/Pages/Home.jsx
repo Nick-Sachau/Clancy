@@ -5,42 +5,41 @@ const Home = () => {
     const [slideNumber, setSlideNumber] = useState(0);
 
     useEffect(() => {
-        const x = setInterval((oldSlideNumber) => {
-            switch (oldSlideNumber) {
-                case 3:
-                    setSlideNumber(1)
+        const x = setInterval(() => {
+            switch (slideNumber) {
+                case 2:
+                    setSlideNumber(0)
                     break;
                 default:
                     setSlideNumber(slideNumber + 1)
                     break;
             }
 
-        }, 1000);
+        }, 4000);
         return (
-            clearInterval(x)
+            setTimeout(() => {
+                clearInterval(x)
+            }, 4000)
         )
     }, [slideNumber])
 
     return (
         <div className="slide">
             <h2>RV INSPECTION</h2>
-            <div className={`slideImages ${{ slideNumber }}`} >
+            <div className={`slideImages`} >
                 {slides.map((slide, index) => {
                     const { src, name } = slide;
-                    let position = "activeSlide"
+                    let position = "nextSlide"
 
                     if(index === slideNumber) {
                         position = "activeSlide";
                     }
 
-                    if(index === slideNumber + 1 || (index === 0 && slideNumber === slide.length - 1)){
-                        position = "nextSlide"
-                    }
-                    if(index < slideNumber){
+                    if(index === slideNumber - 1 || (slideNumber === 0 && index === slides.length - 1)){
                         position = "lastSlide"
                     }
 
-                    return <img className={position} src={src} alt={name} />
+                    return <img key={index} className={position} src={src} alt={name} />
                 })}
             </div>
         </div>

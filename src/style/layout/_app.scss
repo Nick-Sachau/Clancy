@@ -2,6 +2,16 @@
 @use '../util/variables' as *;
 @use '../util/mixins' as *;
 
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 main {
     @include flex-center;
     background-color: $clr-primary-2;

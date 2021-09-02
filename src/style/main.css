@@ -315,7 +315,7 @@ body {
 .navbar .nav-center .links li::after {
   content: "";
   display: block;
-  position: absolute;
+  positoin: absolute;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -445,6 +445,16 @@ footer .addressContainer {
   flex-direction: column;
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -504,13 +514,25 @@ main .container .questions article header .btn {
   display: flex;
   flex-direction: row;
   position: relative;
+  transition: 1s;
+  height: 30vh;
 }
-.slide .lastSlide {
+.slide .slideImages img {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 2s all ease-out;
+}
+.slide .slideImages img.lastSlide {
   transform: translateX(-100%);
 }
-.slide .activeSlide {
+.slide .slideImages img.activeSlide {
   transform: translateX(0%);
+  opacity: 1;
 }
-.slide .nextSlide {
+.slide .slideImages img.nextSlide {
   transform: translateX(100%);
 }
