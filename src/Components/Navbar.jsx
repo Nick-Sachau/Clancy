@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { links } from '../util/consts';
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu } from 'react-icons/gi';
+ 
 
 const Navbar = () => {
 
@@ -23,7 +24,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="nav-center">
                 <div className={`nav-header ${navActive ? 'active' : ''}`}>
-                    <img src="" alt="logo(do later)" className="logo" />
+                    <img src="./util/Logo1.png" alt="fuck" className="logo" />
                     <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
                         <GiHamburgerMenu />
                     </button>
