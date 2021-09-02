@@ -67,3 +67,16 @@ footer {
         flex-direction: column;
     }
 }
+
+@include tablet {
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .contactContainer {
+        margin: 15px;
+    }
+}
