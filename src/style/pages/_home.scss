@@ -17,6 +17,7 @@
             top: 0;
             @include box(100%);
             transition: 2s all ease-out;
+
             &.lastSlide {
                 transform: translateX(-100%);
             }
@@ -26,6 +27,23 @@
             }
             &.nextSlide {
                 transform: translateX(100%);
+            }
+        }
+    }
+}
+
+@include tablet {
+    .slide {
+        height: 50vh;
+        width: 45vw;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .slideImages {
+            height: 50vh;
+
+            img {
+                top: -15vh;
             }
         }
     }

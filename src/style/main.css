@@ -540,4 +540,19 @@ main .container .questions article header .btn {
 }
 .slide .slideImages img.nextSlide {
   transform: translateX(100%);
-}/*# sourceMappingURL=main.css.map */
+}
+
+@media only screen and (min-width: 768px) {
+  .slide {
+    height: 50vh;
+    width: 45vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .slide .slideImages {
+    height: 50vh;
+  }
+  .slide .slideImages img {
+    top: -15vh;
+  }
+}

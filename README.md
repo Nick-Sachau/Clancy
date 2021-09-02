@@ -21,6 +21,21 @@
 # Liam: Helped finish wireframe
 # Nick: I made the switches and links work for the nav bar and footer work
 
+## 8/31
+# Jadyn: Setup pages and basic layout
+# Liam: Helped finish wireframe
+# Nick: I made the switches and links work for the nav bar and footer work
+
+## 9/1
+# Jadyn: Setup pages and basic layout
+# Liam: Helped finish wireframe
+# Nick: I made the switches and links work for the nav bar and footer work
+
+## 9/2
+# Jadyn: Setup pages and basic layout
+# Liam: Helped finish wireframe
+# Nick: I made the switches and links work for the nav bar and footer work
+
 
 # COLOR WHEEL (Monochromatic):
 # #702413
@@ -32,3 +47,6 @@
 
 ### Website (Mobile)
 ![Mobile Page](./src/wireframe/website.png)
+
+### Website (Desktop)
+![Mobile Page](./src/wireframe/websiteD.png)
