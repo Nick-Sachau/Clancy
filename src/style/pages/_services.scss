@@ -22,72 +22,120 @@
         h3 {
             @include flex-center;
             font-weight: bolder;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             color: $clr-secondary-3;
         }
-        .title {
-            font-weight: bold;
-            width: fit-content;
-            border-bottom: 1px solid black;
-            padding-bottom: 10px;
-            @include center-auto;
-        }
-        h4 {
-            @include flex-center;
-        }
-        .content {
-            width: 80%;
-            @include center-auto;
-            text-align: center;
+        .item-outer {
+            float: left;
+            .icons {
+                float: left;
+                width: 15%;
+                font-size: 7rem;
+                align-items: center;
+            }
+            .item-inner {
+                @include center-auto;
+                width: 85%;
+                .title {
+                    font-weight: bold;
+                    width: 45%;
+                    justify-content: left;
+                    border-bottom: 1px solid black;
+                    padding-bottom: 10px;
+                }
+                h4 {
+                    @include flex-center;
+                }
+                .content {
+                    width: 80%;
+                    @include center-auto;
+                    text-align: center;
+                }
+                .last {
+                    margin-bottom: 8rem;
+                }
+            }
         }
     }
 }
 
 @include tablet {
     .services {
+        margin: 5px;
+        position: absolute;
         .left-container {
             width: 50%;
-            .left {
-                width: 30%;
-                float: left;
-                margin-top: 2rem;
-                border-left: 7px solid $clr-secondary-3;
-                h1 {
-                    margin: 0;
-                    padding: 0;
-                    font-weight: bold;
-                    border: none;
-                }
-                h4 {
-                    @include flex-center;
+            float: left;
+            @include flex-center;
+            position: fixed;
+            bottom: 40%;
+            height: fit-content;
+            .left-outer {
+                width: fit-content;
+                height: fit-content;
+                padding: 2% 3%;
+                background: hsl(0, 0%, 70%);
+                box-shadow: $dark-shadow;
+                .left {
+                    width: 55%;
+                    border-left: 7px solid $clr-secondary-3;
+                    padding-left: 5px;
+                    margin: 1px;
+                    h1 {
+                        text-align: left;
+                        margin: 0;
+                        padding: 0;
+                        width: fit-content;
+                        font-weight: bold;
+                        border: none;
+                    }
                 }
             }
         }
         .right {
+            margin-right: 3rem;
             float: right;
             width: 50%;
-            margin-top: 3rem;
+            margin-top: 2rem;
             h3 {
                 @include flex-center;
                 font-weight: bolder;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
                 color: $clr-secondary-3;
             }
-            .title {
-                font-weight: bold;
-                width: fit-content;
-                border-bottom: 1px solid black;
-                padding-bottom: 10px;
-                @include center-auto;
+            .item-outer {
+                border-right: 5px solid $clr-secondary-3;
+                float: left;
+                .icons {
+                    float: left;
+                    width: 15%;
+                    font-size: 5rem;
+                    align-items: center;
+                }
+                .item-inner {
+                    @include center-auto;
+                    width: 85%;
+                    .title {
+                        font-weight: bold;
+                        width: fit-content;
+                        border-bottom: 1px solid black;
+                        padding-bottom: 10px;
+                        @include center-auto;
+                    }
+                    h4 {
+                        @include flex-center;
+                    }
+                    .content {
+                        width: 80%;
+                        @include center-auto;
+                        text-align: center;
+                    }
+                    .last {
+                        margin: 0;
+                    }
+                }
             }
-            h4 {
-                @include flex-center;
-            }
-            .content {
-                width: 80%;
-                @include center-auto;
-                text-align: center;
-            }
+            margin-bottom: 10rem;
         }
     }
 }
