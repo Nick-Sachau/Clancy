@@ -23,7 +23,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className={`nav-header ${navActive ? 'active' : ''}`}>
-                <img src="../Images/Logo1.png" alt="logo" className="logo" />
+                <Link to={'/'}>
+                    <img src="../Images/Logo1.png" alt="logo" className="logo" />
+                </Link>
                 <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
                     <GiHamburgerMenu />
                 </button>

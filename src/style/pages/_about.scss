@@ -1,3 +1,7 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
 h1 {
     text-align: center;
 }
@@ -24,6 +28,7 @@ h1 {
 }
 
 .certs {
+    padding-top: 1rem;
     h3 {
         text-align: center;
     }
@@ -37,15 +42,15 @@ h1 {
     .cert {
         width: 300px;
         height: 250px;
-        background-color: #704035;
+        background-color: $clr-secondary-2;
         margin: 15px;
         border-radius: 50px;
         color: white;
         &:hover {
             transition: all .5s linear;
-            background-color: #F28972;
+            background-color: $clr-secondary-3;
             padding: 0px;
-            box-shadow: 5px 5px 10px grey;
+            box-shadow: 5px 5px 10px $dark-shadow;
         }
         h4 {
             text-align: center;

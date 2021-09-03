@@ -492,6 +492,9 @@ h1 {
   height: auto;
 }
 
+.certs {
+  padding-top: 1rem;
+}
 .certs h3 {
   text-align: center;
 }
@@ -503,16 +506,16 @@ h1 {
 .certs .cert {
   width: 300px;
   height: 250px;
-  background-color: #704035;
+  background-color: #a61717;
   margin: 15px;
   border-radius: 50px;
   color: white;
 }
 .certs .cert:hover {
   transition: all 0.5s linear;
-  background-color: #F28972;
+  background-color: #ca1c1c;
   padding: 0px;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .certs .cert h4 {
   text-align: center;
