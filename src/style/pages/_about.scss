@@ -1,70 +1,89 @@
-h1 {
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+.about {
+    margin-top: 90px;
     text-align: center;
-}
-
-.about-img {
-    display: inline-block;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid deepskyblue;
-}
-
-.img-center {
-    display: flex;
-    margin: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    h4 {
-        text-align: center;
-        width: 50%;
-        padding: 5px 15px;
-        height: auto;
+    h1 {
+        width: fit-content;
+        @include center-auto;
+        border-left: 5px $clr-secondary-3 solid;
+        padding-left: 5px;
     }
-}
-
-.certs {
     h3 {
-        text-align: center;
+        width: 90%;
+        @include center-auto;
     }
-
-    .cert-con {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    .right-about {
+        margin-top: 3rem;
+        h3 {
+            @include flex-center;
+            font-weight: bolder;
+            margin-bottom: 2rem;
+            color: $clr-secondary-3;
+        }
+        .certifications {
+            float: left;
+            .icons {
+                float: left;
+                width: 15%;
+                font-size: 7rem;
+                align-items: center;
+            }
+            .certs-inner {
+                @include center-auto;
+                width: 85%;
+                .cert {
+                    font-weight: bold;
+                    width: 45%;
+                    justify-content: left;
+                    border-bottom: 1px solid black;
+                    padding-bottom: 10px;
+                }
+                h4 {
+                    @include flex-center;
+                }
+                .content {
+                    width: 80%;
+                    @include center-auto;
+                    text-align: center;
+                }
+                .last {
+                    margin-bottom: 8rem;
+                }
+            }
+        }
     }
+}
 
-    .cert {
-        width: 300px;
-        height: 250px;
-        background-color: #704035;
-        margin: 15px;
-        border-radius: 50px;
-        color: white;
-        &:hover {
-            transition: all .5s linear;
-            background-color: #F28972;
-            padding: 0px;
-            box-shadow: 5px 5px 10px grey;
+@include tablet {
+    .about {
+        margin-top: 80px;
+        .left-about {
+            float: right;
+            width: 60%;
+            h3 {
+                font-size: 1.6rem;
+                margin-top: 3rem;
+                border-right: 2px solid $clr-secondary-3;
+            }
         }
-        h4 {
-            text-align: center;
-            padding: 10px;
-            font-size: 18px;
-        }
-        .list {
-            word-wrap: break-word;
-            text-align: left;
-            font-size: 16px;
-            ul {
-                list-style-type: disc;
-                display: flex;
-                flex-direction: column;
-                width: 70%;
-                margin: 0 auto;
-                li {
-                    width: 100%;
-                    margin: 3px 0px;
+        .right-about {
+            background: hsl(0, 0%, 70%);
+            margin-top: 0;
+            padding-top: 0;
+            margin: 0;
+            float: left;
+            width: 40%;
+            overflow: hidden;
+            .certifications {
+                border-left: 3px solid $clr-secondary-3;
+                margin-left: 3px;
+                .certs-inner {
+                    h4.cert {
+                        font-weight: bolder;
+                        justify-content: left;
+                    }
                 }
             }
         }

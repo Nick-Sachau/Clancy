@@ -467,75 +467,100 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+.about {
+  margin-top: 90px;
   text-align: center;
 }
-
-.about-img {
-  display: inline-block;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 3px solid deepskyblue;
+.about h1 {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px #ca1c1c solid;
+  padding-left: 5px;
 }
-
-.img-center {
+.about h3 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about .right-about {
+  margin-top: 3rem;
+}
+.about .right-about h3 {
   display: flex;
-  margin: 15px;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  color: #ca1c1c;
 }
-.img-center h4 {
-  text-align: center;
-  width: 50%;
-  padding: 5px 15px;
-  height: auto;
+.about .right-about .certifications {
+  float: left;
 }
-
-.certs h3 {
-  text-align: center;
+.about .right-about .certifications .icons {
+  float: left;
+  width: 15%;
+  font-size: 7rem;
+  align-items: center;
 }
-.certs .cert-con {
+.about .right-about .certifications .certs-inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+.about .right-about .certifications .certs-inner .cert {
+  font-weight: bold;
+  width: 45%;
+  justify-content: left;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.about .right-about .certifications .certs-inner h4 {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
-.certs .cert {
-  width: 300px;
-  height: 250px;
-  background-color: #704035;
-  margin: 15px;
-  border-radius: 50px;
-  color: white;
-}
-.certs .cert:hover {
-  transition: all 0.5s linear;
-  background-color: #F28972;
-  padding: 0px;
-  box-shadow: 5px 5px 10px grey;
-}
-.certs .cert h4 {
+.about .right-about .certifications .certs-inner .content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 10px;
-  font-size: 18px;
 }
-.certs .cert .list {
-  word-wrap: break-word;
-  text-align: left;
-  font-size: 16px;
-}
-.certs .cert .list ul {
-  list-style-type: disc;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 0 auto;
-}
-.certs .cert .list ul li {
-  width: 100%;
-  margin: 3px 0px;
+.about .right-about .certifications .certs-inner .last {
+  margin-bottom: 8rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .about {
+    margin-top: 80px;
+  }
+  .about .left-about {
+    float: right;
+    width: 60%;
+  }
+  .about .left-about h3 {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    border-right: 2px solid #ca1c1c;
+  }
+  .about .right-about {
+    background: #b3b3b3;
+    margin-top: 0;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width: 40%;
+    overflow: hidden;
+  }
+  .about .right-about .certifications {
+    border-left: 3px solid #ca1c1c;
+    margin-left: 3px;
+  }
+  .about .right-about .certifications .certs-inner h4.cert {
+    font-weight: bolder;
+    justify-content: left;
+  }
+}
 .slide .overlay {
   position: absolute;
   top: 20%;

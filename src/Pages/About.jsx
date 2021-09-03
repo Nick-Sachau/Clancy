@@ -1,9 +1,44 @@
 import React from "react";
+import { BsCheckBox } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div className="about">
+      <div className="left-about">
+        <div className="about-section">
+          <h1>About Us</h1>
+          <h3>Dolore excepteur officia quis eiusmod laborum eu elit anim cillum labore do enim ut Lorem. Elit ea ullamco nostrud mollit velit culpa consectetur sint minim esse anim. Fugiat sunt in quis non velit ad culpa duis. Do irure aute sint sit ex ut dolore cillum magna aliqua consectetur reprehenderit esse. In proident incididunt esse cillum incididunt aliqua commodo consectetur ipsum sint esse culpa veniam fugiat. Est duis in voluptate reprehenderit ullamco culpa magna nisi consectetur minim.</h3>
+        </div>
+      </div>
+      <div className="right-about">
+        <div className="certifications">
+          <div className="certs-inner">
+            <h4 className="cert">Certification 1</h4>
+            <BsCheckBox className="icons" />
+            <h4 className="content">
+              Mollit ad commodo laboris dolore et pariatur culpa aute in laborum. Id
+              nulla cupidatat sit Lorem. Reprehenderit qui velit sit mollit. Deserunt sint amet fugiat do ea ad anim qui magna aliquip cillum.
+            </h4>
+          </div>
+          <div className="certs-inner">
+            <h4 className="cert">Certification 2</h4>
+            <BsCheckBox className="icons" />
+            <h4 className="content">
+              Mollit ad commodo laboris dolore et pariatur culpa aute in laborum. Id
+              nulla cupidatat sit Lorem. Reprehenderit qui velit sit mollit. Deserunt sint amet fugiat do ea ad anim qui magna aliquip cillum.
+            </h4>
+          </div>
+          <div className="certs-inner">
+            <h4 className="cert">Certification 3</h4>
+            <BsCheckBox className="icons" />
+            <h4 className="content last">
+              Mollit ad commodo laboris dolore et pariatur culpa aute in laborum. Id
+              nulla cupidatat sit Lorem. Reprehenderit qui velit sit mollit. Deserunt sint amet fugiat do ea ad anim qui magna aliquip cillum.
+            </h4>
+          </div>
+        </div>
+      </div>
+      {/* <h1>About Me</h1>
       <div className="certs">
         <h3>Certifications</h3>
         <div className="cert-con">
@@ -55,9 +90,20 @@ const About = () => {
           deserunt proident incididunt adipisicing ipsum eu. Nisi enim incididunt
           in dolor. Eiusmod et enim est ut et occaecat esse amet id tempor.
         </h4>
-      </div>
+      </div> */}
     </div>
   );
 };
 
 export default About;
+{/* <div className="certs-section">
+          <h4>Qualifications</h4>
+          <h3>Certification 1</h3>
+          <h4>Occaecat eu culpa incididunt do non nisi Lorem eu sit eu.Aliquip dolor dolore elit sint proident voluptate fugiat incididunt ullamco.</h4>
+          <h4>Certifications</h4>
+          <h3>Certification 2</h3>
+          <h4>Occaecat eu culpa incididunt do non nisi Lorem eu sit eu.Aliquip dolor dolore elit sint proident voluptate fugiat incididunt ullamco.</h4>
+          <h4>Certifications</h4>
+          <h3>Certification 3</h3>
+          <h4>Occaecat eu culpa incididunt do non nisi Lorem eu sit eu.Aliquip dolor dolore elit sint proident voluptate fugiat incididunt ullamco.</h4>
+        </div> */}
