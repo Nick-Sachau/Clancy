@@ -6,6 +6,7 @@ import {CgToolbox} from 'react-icons/cg'
 const Services = () => {
   return (
     <div className="services">
+      <div className="left-container">
       <div className="left">
         <div className="upper">
           <div className="line"></div>
@@ -14,6 +15,7 @@ const Services = () => {
 
         
         <h4>Tempor labore duis laboris elit cillum.</h4>
+      </div>
       </div>
       <div className="right">
         <h3>What we offer</h3>

@@ -44,45 +44,50 @@
 }
 
 @include tablet {
-    .left {
-        float: left;
-        margin-top: 2rem;
-        width: 50%;
-        h1 {
-            @include flex-center;
-            border-left: 7px solid $clr-secondary-3;
-            width: 65vw;
-            @include center-auto;
-            font-weight: bold;
+    .services {
+        .left-container {
+            width: 50%;
+            .left {
+                width: 30%;
+                float: left;
+                margin-top: 2rem;
+                border-left: 7px solid $clr-secondary-3;
+                h1 {
+                    margin: 0;
+                    padding: 0;
+                    font-weight: bold;
+                    border: none;
+                }
+                h4 {
+                    @include flex-center;
+                }
+            }
         }
-        h4 {
-            @include flex-center;
-        }
-    }
-    .right {
-        float: right;
-        width: 50%;
-        margin-top: 3rem;
-        h3 {
-            @include flex-center;
-            font-weight: bolder;
-            margin-bottom: 1rem;
-            color: $clr-secondary-3;
-        }
-        .title {
-            font-weight: bold;
-            width: fit-content;
-            border-bottom: 1px solid black;
-            padding-bottom: 10px;
-            @include center-auto;
-        }
-        h4 {
-            @include flex-center;
-        }
-        .content {
-            width: 80%;
-            @include center-auto;
-            text-align: center;
+        .right {
+            float: right;
+            width: 50%;
+            margin-top: 3rem;
+            h3 {
+                @include flex-center;
+                font-weight: bolder;
+                margin-bottom: 1rem;
+                color: $clr-secondary-3;
+            }
+            .title {
+                font-weight: bold;
+                width: fit-content;
+                border-bottom: 1px solid black;
+                padding-bottom: 10px;
+                @include center-auto;
+            }
+            h4 {
+                @include flex-center;
+            }
+            .content {
+                width: 80%;
+                @include center-auto;
+                text-align: center;
+            }
         }
     }
 }
