@@ -1,7 +1,6 @@
 @use '../themes/defaultTheme' as *;
 @use '../util/variables' as *;
 @use '../util/mixins' as *;
-
 a {
     color: $text-color;
 }
@@ -11,20 +10,21 @@ a:visited {
 }
 
 .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     background: $navbar-color;
     box-shadow: $light-shadow;
-
+    z-index: 23021938102983098098098098;
     .nav-header {
         @include flex-center;
         justify-content: space-between;
         padding: .25rem 1rem;
-        z-index: 23021938102983098098098098;
-
         &.active {
             border-bottom: 3px solid $clr-secondary-3;
         }
     }
-
     .nav-toggle {
         font-size: 1.5rem;
         color: $clr-secondary-3;
@@ -32,18 +32,15 @@ a:visited {
         border-color: transparent;
         transition: $transition;
         cursor: pointer;
-
         &.rotate {
             transform: rotate(90deg);
         }
     }
-
     .logo {
         height: 70px;
         display: flex;
         justify-content: left;
     }
-
     .links-container {
         width: 100%;
         position: absolute;
@@ -52,17 +49,14 @@ a:visited {
         overflow: hidden;
         background: $navbar-color;
         text-align: center;
-
         .active {
             text-decoration: underline;
         }
-
         &.show {
             height: auto;
             padding-bottom: 1rem;
         }
     }
-
     .links li {
         color: $text-color;
         font-size: 1rem;
@@ -72,17 +66,14 @@ a:visited {
         padding: 0.5rem 1rem;
         transition: $transition;
         position: relative;
-
         &:hover {
             background: $clr-primary-8;
             color: $navbar-color;
             padding-left: 1.5rem;
-
             &::after {
                 width: 100%;
             }
         }
-
         &::after {
             @include pseudo;
             position: absolute;
@@ -92,24 +83,20 @@ a:visited {
             background: $clr-primary-4;
             transition: 0.3s ease all;
         }
-
         a {
             &:visited {
                 color: $text-color;
             }
         }
     }
-
     .social-icons {
         @include flex-space-ar;
         list-style-type: none;
         height: 0;
         overflow: hidden;
-
         li {
             margin: 0.5rem 1rem;
         }
-
         &.show {
             height: auto;
         }
@@ -123,12 +110,10 @@ a:visited {
         @include center-auto;
         @include flex-space-bet;
         padding: 1rem;
-
         .nav-header {
             padding: 0;
             width: 20%;
             display: block;
-
             .logo {
                 display: 40px;
                 width: 100px;
@@ -138,15 +123,12 @@ a:visited {
                 display: none;
             }
         }
-
         .links-container {
             width: 20vw;
             height: auto;
             position: relative;
-
             .links {
                 display: flex;
-    
                 li {
                     padding: 0;
                     margin: 0 0.5rem;
@@ -157,10 +139,8 @@ a:visited {
                 }
             }
         }
-
         .social-icons {
             display: flex;
-
             a {
                 margin: 0 0.5rem;
                 color: $clr-secondary-4;

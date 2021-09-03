@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { slides } from '../util/consts'
-import {GoTriangleLeft, GoTriangleRight} from 'react-icons/go'
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const [slideNumber, setSlideNumber] = useState(0);
@@ -34,17 +34,26 @@ const Home = () => {
 
     return (
         <>
+
             <div className="slide">
+                <div className="overlay">
+                    <div className="inner-overlay">
+                        <h1><span>BRIGGS</span><br /> RV SERVICES</h1>
+                        <h3>"Officia dolor proident et ex tempor commodo nostrud."</h3>
+                        <h3>Clancy Briggs</h3>
+                        <h3><Link to='/services'>What We Offer</Link></h3>
+                    </div>
+                </div>
                 <div className={`slideImages`} >
                     {slides.map((slide, index) => {
                         const { src, name } = slide;
-                        let position = "nextSlide"  
+                        let position = "nextSlide"
 
-                        if(index === slideNumber) {
+                        if (index === slideNumber) {
                             position = "activeSlide";
                         }
 
-                        if(index === slideNumber - 1 || (slideNumber === 0 && index === slides.length - 1)){
+                        if (index === slideNumber - 1 || (slideNumber === 0 && index === slides.length - 1)) {
                             position = "lastSlide"
                         }
 
@@ -52,7 +61,7 @@ const Home = () => {
                     })}
                 </div>
             </div>
-            <div className='container'>
+            {/* <div className='container'>
                 <h1>My Background</h1>
                 <p className="text">Ut Lorem Lorem adipisicing pariatur culpa elit consequat. Non reprehenderit minim aliquip in reprehenderit fugiat aliqua exercitation sit ullamco labore adipisicing sit. Nisi commodo qui sunt qui in. Quis Lorem adipisicing in voluptate cillum et do aute Lorem. Mollit voluptate in amet irure proident mollit nisi.</p>
                 <div className="certs">
@@ -60,7 +69,8 @@ const Home = () => {
                     <p className="cert">Dolore ut voluptate</p>
                     <p className="cert">Cupidatat reprehenderit</p>
                 </div>
-            </div>
+            </div> */}
+
         </>
     )
 }

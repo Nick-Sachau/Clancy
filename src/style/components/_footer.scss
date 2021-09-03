@@ -6,11 +6,11 @@ a:visited {
 }
 
 html {
-    position: absolute;
+    position: relative;
     footer {
         background: $clr-primary-3;
         color: $text-color;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         width: 100%;
         display: flex;
@@ -27,7 +27,7 @@ html {
             h5 {
                 display: inline-flex;
                 margin: 0 6px;
-                background-color: green;
+                background-color: $clr-secondary-3;
                 padding: 3px;
                 border-radius: 50%;
             }

@@ -1,9 +1,7 @@
 @use '../themes/defaultTheme' as *;
 @use '../util/variables' as *;
 @use '../util/mixins' as *;
-
 .slide {
-
     .slideImages {
         display: flex;
         flex-direction: row;
@@ -12,7 +10,6 @@
         height: 30vh;
         top: -10vh;
         z-index: -10;
-
         img {
             position: absolute;
             opacity: 0;
@@ -20,7 +17,6 @@
             top: 0;
             @include box(100%);
             transition: 2s all ease-out;
-
             &.lastSlide {
                 transform: translateX(-100%);
             }
@@ -37,26 +33,22 @@
 
 .container {
     margin-bottom: 20vh;
-
     h1 {
         font-size: 2.5rem;
     }
-
     .text {
         text-align: center;
         color: $clr-primary-2;
-        font-size: .8rem;
+        font-size: 0.8rem;
         width: 70vw;
         margin: 0 auto;
     }
-
     .certs {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-
         .cert {
             width: 12rem;
             height: 10rem;
@@ -72,26 +64,76 @@
 
 @include tablet {
     .slide {
-        height: 50vh;
-        width: 45vw;
+        height: 100vh;
+        width: 100vw;
         margin: 0 auto;
         overflow: hidden;
-
         .slideImages {
-            height: 55vh;
-            width: 45vw;
+            height: 100vh;
+            width: 100vw;
             z-index: -10;
             top: 7vh;
-
             img {
                 top: -15vh;
             }
         }
+        .overlay {
+            position: absolute;
+            display: flex;
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            .inner-overlay {
+                @include center-auto;
+                justify-content: center;
+                text-align: center;
+                .logo {
+                    width: 20%;
+                    height: fit-content;
+                }
+                h1 {
+                    span {
+                        font-weight: bolder;
+                        font-size: 6rem;
+                        margin-bottom: 5px;
+                    }
+                    margin-top: 107.63px;
+                    font-size: 3rem;
+                    border-bottom: 2px solid $text-color;
+                    width: fit-content;
+                    @include center-auto;
+                    padding-bottom: 2rem;
+                    color: $text-color;
+                }
+                h3 {
+                    color: white;
+                    &:first-of-type {
+                        margin-top: 2rem;
+                    }
+                    &:nth-of-type(2) {
+                        font-size: 1rem;
+                    }
+                    &:nth-of-type(3) {
+                        margin-top: 5rem;
+                        font-size: 1.5rem;
+                        border: 1px solid $text-color;
+                        box-shadow: $dark-shadow;
+                        width: fit-content;
+                        @include center-auto;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
     }
-
     .container {
         margin-bottom: 20vh;
-
         .text {
             text-align: center;
             color: $clr-primary-2;
@@ -99,14 +141,12 @@
             width: 70vw;
             margin: 0 auto;
         }
-
         .certs {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
-
             .cert {
                 width: 15rem;
                 height: 13rem;

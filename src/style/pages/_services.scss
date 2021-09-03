@@ -3,6 +3,7 @@
 @use '../themes/defaultTheme' as *;
 .services {
     margin-bottom: 15rem;
+    margin-top: 85px;
     display: flex-inline;
     .left {
         margin-top: 2rem;
@@ -62,6 +63,7 @@
 @include tablet {
     .services {
         margin: 5px;
+        margin-top: 80px;
         position: absolute;
         .left-container {
             width: 50%;

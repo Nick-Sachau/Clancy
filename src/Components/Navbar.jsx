@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className={`nav-header ${navActive ? 'active' : ''}`}>
-                <img src="../Images/Logo1.png" alt="fuck" className="logo" />
+                <img src="../Images/Logo1.png" alt="logo" className="logo" />
                 <button onClick={openNav} className={`nav-toggle ${rotateHamburger && 'rotate'}`}>
                     <GiHamburgerMenu />
                 </button>
