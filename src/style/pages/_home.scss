@@ -35,6 +35,39 @@
     }
 }
 
+.container {
+    margin-bottom: 20vh;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .text {
+        text-align: center;
+        color: $clr-primary-2;
+        font-size: .8rem;
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    .certs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+        .cert {
+            width: 15rem;
+            height: 8rem;
+            color: $clr-primary-2;
+            font-size: 1rem;
+            text-align: center;
+            padding: 2rem 0;
+            background: $clr-secondary-3;
+        }
+    }
+}
+
 @include tablet {
     .slide {
         height: 50vh;
@@ -52,13 +85,32 @@
                 top: -15vh;
             }
         }
+    }
 
-        .above {
-            z-index: 500;
+    .container {
+        margin-bottom: 20vh;
+
+        .text {
+            text-align: center;
+            color: $clr-primary-2;
+            font-size: 1.1rem;
+            width: 70vw;
+            margin: 0 auto;
         }
 
         .certs {
-            z-index: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+            .cert {
+                color: $clr-primary-2;
+                font-size: 3rem;
+                text-align: center;
+                padding: 2rem 0;
+                background: $clr-secondary-3;
+            }
         }
     }
 }
