@@ -600,18 +600,20 @@ h1 {
 }
 .container .certs {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 .container .certs .cert {
-  width: 15rem;
-  height: 8rem;
+  width: 12rem;
+  height: 10rem;
   color: #262626;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 2rem 0;
+  vertical-align: middle;
   background: #ca1c1c;
+  padding: 3.5rem 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -643,13 +645,16 @@ h1 {
   }
   .container .certs {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
   .container .certs .cert {
+    width: 15rem;
+    height: 13rem;
     color: #262626;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     padding: 2rem 0;
     background: #ca1c1c;
