@@ -82,7 +82,6 @@
 }
 
 .container {
-    margin-bottom: 20vh;
     h1 {
         font-size: 2.5rem;
     }
@@ -110,6 +109,10 @@
             padding: 3.5rem 0;
         }
     }
+}
+
+.bottomSpace {
+    height: 60vh;
 }
 
 @include tablet {
@@ -148,11 +151,6 @@
                     height: fit-content;
                 }
                 h1 {
-                    span {
-                        font-weight: bolder;
-                        font-size: 6rem;
-                        margin-bottom: 5px;
-                    }
                     margin-top: 0;
                     font-size: 3rem;
                     border-bottom: 2px solid $text-color;
@@ -160,6 +158,11 @@
                     @include center-auto;
                     padding-bottom: 2rem;
                     color: $text-color;
+                    span {
+                        font-weight: bolder;
+                        font-size: 6rem;
+                        margin-bottom: 5px;
+                    }
                 }
                 h3 {
                     color: white;

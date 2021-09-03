@@ -61,16 +61,6 @@ const Home = () => {
                     })}
                 </div>
             </div>
-            {/* <div className='container'>
-                <h1>My Background</h1>
-                <p className="text">Ut Lorem Lorem adipisicing pariatur culpa elit consequat. Non reprehenderit minim aliquip in reprehenderit fugiat aliqua exercitation sit ullamco labore adipisicing sit. Nisi commodo qui sunt qui in. Quis Lorem adipisicing in voluptate cillum et do aute Lorem. Mollit voluptate in amet irure proident mollit nisi.</p>
-                <div className="certs">
-                    <p className="cert">Voluptate ullamco</p>
-                    <p className="cert">Dolore ut voluptate</p>
-                    <p className="cert">Cupidatat reprehenderit</p>
-                </div>
-            </div> */}
-
         </>
     )
 }
