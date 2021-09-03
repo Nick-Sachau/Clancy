@@ -33,24 +33,35 @@ const Home = () => {
     }, [slideNumber])
 
     return (
-        <div className="slide">
-            <div className={`slideImages`} >
-                {slides.map((slide, index) => {
-                    const { src, name } = slide;
-                    let position = "nextSlide"  
+        <>
+            <div className="slide">
+                <div className={`slideImages`} >
+                    {slides.map((slide, index) => {
+                        const { src, name } = slide;
+                        let position = "nextSlide"  
 
-                    if(index === slideNumber) {
-                        position = "activeSlide";
-                    }
+                        if(index === slideNumber) {
+                            position = "activeSlide";
+                        }
 
-                    if(index === slideNumber - 1 || (slideNumber === 0 && index === slides.length - 1)){
-                        position = "lastSlide"
-                    }
+                        if(index === slideNumber - 1 || (slideNumber === 0 && index === slides.length - 1)){
+                            position = "lastSlide"
+                        }
 
-                    return <img key={index} className={position} src={src} alt={name} />
-                })}
+                        return <img key={index} className={position} src={src} alt={name} />
+                    })}
+                </div>
             </div>
-        </div>
+            <div className='container'>
+                <h1 className='above'>My Background</h1>
+                <p className='above'>Nisi cupidatat ea minim voluptate ipsum sint excepteur amet pariatur cillum.</p>
+                <div className="certs above">
+                    <div className="cert">Voluptate ullamco</div>
+                    <div className="cert">Dolore ut voluptate</div>
+                    <div className="cert">Cupidatat reprehenderit</div>
+                </div>
+            </div>
+        </>
     )
 }
 
