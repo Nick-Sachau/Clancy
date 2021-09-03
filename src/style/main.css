@@ -712,3 +712,59 @@ h1 {
   margin-right: auto;
   text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .left {
+    float: left;
+    margin-top: 2rem;
+    width: 50%;
+  }
+  .left h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 7px solid #ca1c1c;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+  }
+  .left h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right {
+    float: right;
+    width: 50%;
+    margin-top: 3rem;
+  }
+  .right h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: #ca1c1c;
+  }
+  .right .title {
+    font-weight: bold;
+    width: fit-content;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

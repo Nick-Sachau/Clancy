@@ -41,14 +41,48 @@
             text-align: center;
         }
     }
-    //   .left{
-    //       float: left;
-    //      h1 {
-    //     @include flex-center;
-    //   }
-    //   }
-    //   .right{
-    //       float: right;
-    //   }
-    //will use when not in mobile
+}
+
+@include tablet {
+    .left {
+        float: left;
+        margin-top: 2rem;
+        width: 50%;
+        h1 {
+            @include flex-center;
+            border-left: 7px solid $clr-secondary-3;
+            width: 65vw;
+            @include center-auto;
+            font-weight: bold;
+        }
+        h4 {
+            @include flex-center;
+        }
+    }
+    .right {
+        float: right;
+        width: 50%;
+        margin-top: 3rem;
+        h3 {
+            @include flex-center;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+            color: $clr-secondary-3;
+        }
+        .title {
+            font-weight: bold;
+            width: fit-content;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            @include center-auto;
+        }
+        h4 {
+            @include flex-center;
+        }
+        .content {
+            width: 80%;
+            @include center-auto;
+            text-align: center;
+        }
+    }
 }
