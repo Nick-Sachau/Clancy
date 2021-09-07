@@ -1,0 +1,92 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+.about {
+    margin-top: 90px;
+    text-align: center;
+    h1 {
+        width: fit-content;
+        @include center-auto;
+        border-left: 5px $clr-secondary-3 solid;
+        padding-left: 5px;
+    }
+    h3 {
+        width: 90%;
+        @include center-auto;
+    }
+    .right-about {
+        margin-top: 3rem;
+        h3 {
+            @include flex-center;
+            font-weight: bolder;
+            margin-bottom: 2rem;
+            color: $clr-secondary-3;
+        }
+        .certifications {
+            float: left;
+            .icons {
+                float: left;
+                width: 15%;
+                font-size: 7rem;
+                align-items: center;
+            }
+            .certs-inner {
+                @include center-auto;
+                width: 85%;
+                .cert {
+                    font-weight: bold;
+                    width: 45%;
+                    justify-content: left;
+                    border-bottom: 1px solid black;
+                    padding-bottom: 10px;
+                }
+                h4 {
+                    @include flex-center;
+                }
+                .content {
+                    width: 80%;
+                    @include center-auto;
+                    text-align: center;
+                }
+                .last {
+                    margin-bottom: 8rem;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .about {
+        margin-top: 80px;
+        .left-about {
+            margin-top: 1rem;
+            float: right;
+            width: 60%;
+            h3 {
+                font-size: 1.6rem;
+                margin-top: 3rem;
+                border-right: 2px solid $clr-secondary-3;
+            }
+        }
+        .right-about {
+            background: hsl(0, 0%, 70%);
+            margin-top: 0;
+            padding-top: 0;
+            margin: 0;
+            float: left;
+            width: 40%;
+            overflow: hidden;
+            .certifications {
+                border-left: 3px solid $clr-secondary-3;
+                margin-left: 3px;
+                .certs-inner {
+                    h4.cert {
+                        font-weight: bolder;
+                        justify-content: left;
+                    }
+                }
+            }
+        }
+    }
+}

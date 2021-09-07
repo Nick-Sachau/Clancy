@@ -1,34 +1,24 @@
 ## 8/27
-# Jadyn: 
-# Liam: 
-# Nick: 
-### Home Page (Mobile)
-![Home Page](./src/wireframe/home.png)
-### About Page (Mobile)
-![About Page](./src/wireframe/about.png)
-### Services Page (Mobile)
-![Services Page](./src/wireframe/services.png)
-
-### Home Page (Desktop)
-![Home Page](./src/wireframe/homeD.png)
-### About Page (Desktop)
-![About Page](./src/wireframe/aboutD.png)
-### Services Page (Desktop)
-![Services Page](./src/wireframe/servicesD.png)
+# Jadyn: made wireframe
+# Liam: made wireframe
+# Nick: made wireframe
 
 ## 8/30
 # Jadyn: Setup pages and basic layout
 # Liam: Helped finish wireframe
 # Nick: I made the switches and links work for the nav bar and footer work
 
+## 8/31
+# Jadyn: started working on the services page, added all the basic layout
+# Liam: started styles for mobile page
+# Nick: started working on the home page slider
 
-# COLOR WHEEL (Monochromatic):
-# #702413
-# #F28972
-# #F04D29
-# #704035
-# #BD3D20 
+## 9/1
+# Jadyn: finished services and added to styles
+# Liam: made footer and added styles
+# Nick: almost finished the home slider
 
-
-### Website (Mobile)
-![Mobile Page](./src/wireframe/website.png)
+## 9/2
+# Jadyn: worked on the about me page 
+# Liam: addes styles to about me page
+# Nick: finished the home slide and added some styles to desktop and mobile
